@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:elevation="10dp"
+    app:cardElevation="1dp"
+    app:cardMaxElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/group_dp_list"
+                android:layout_width="121dp"
+                android:layout_height="85dp"
+
+                android:maxHeight="100dp"
+                android:src="@drawable/pro" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/group_Name"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="5"
+                    android:text="Group Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/timeUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:text="5:25 PM"
+                    android:textAlignment="viewEnd"
+                    android:textColor="#A39D9D"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/group_Chat_hint"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Chat Hint"
+                android:textColor="#A39D9D" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttons"
+                    android:text="Accept"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:id="@+id/request_accept_btn"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#F50057"
+                    android:text="Reject"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:id="@+id/request_cancel_btn"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <item
+        android:title="Group Requests"
+        android:id="@+id/new_grp_requests_menu"
+        app:showAsAction="always"
+        android:icon="@drawable/group_icon"
+        />
+
+    <item
+        android:title="New Group"
+        android:id="@+id/new_group"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:title="Find Friends"
+        android:id="@+id/find_friends_menu_btn"
+        app:showAsAction="collapseActionView"/>
+    <item
+        android:title="Join a group"
+        android:id="@+id/join_group_menu_btn"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:title="Settings"
+        android:id="@+id/menu_settings"
+        app:showAsAction="collapseActionView"
+
+        />
+
+
+    <item
+        android:title="Log Out"
+        android:id="@+id/menu_logout"
+        app:showAsAction="collapseActionView"/>
+
+</menu>
